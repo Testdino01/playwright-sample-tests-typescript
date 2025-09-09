@@ -113,6 +113,6 @@ jobs:
       - name: Send TestDino report
         run: |
           npx --yes tdpw ./playwright-report \
-            --token="trx_production_b0b86d5f044ecfa1d02cbdfa2f9d644dd7e4889912e0494b802abfe8f251db8e" \
+            --token="trx_production_db4cc8ccb0cdcc980fc3f7e0a6f220b88dcaf22d76444222009b8ea742864752" \
             --upload-html \
             --verbose
