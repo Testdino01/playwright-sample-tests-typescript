@@ -1,6 +1,6 @@
 # Ecommerce-demo-store Playwright Tests
 
-Automated end-to-end tests for [Ecommerce Demo Store](https://demo.alphabin.co/) using [Playwright](https://playwright.dev/) and TypeScript.
+Automated end-to-end tests for Ecommerce Demo Store using [Playwright](https://playwright.dev/) and TypeScript.
 
 ---
 
