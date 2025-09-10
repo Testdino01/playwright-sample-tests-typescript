@@ -1,14 +1,14 @@
-# alphabin-demo-test-playwright
+# Ecommerce-demo-store Playwright Tests
 
-Automated end-to-end tests for [Alphabin Demo](https://demo.alphabin.co/) using [Playwright](https://playwright.dev/).
+Automated end-to-end tests for [Ecommerce Demo Store](https://demo.alphabin.co/) using [Playwright](https://playwright.dev/) and TypeScript.
 
 ---
 
 ## Project Structure
 
-- `pages/` — Page Object Models
-- `tests/` — Test specifications
-- `playwright.config.js` — Playwright configuration
+- `pages/` — Page Object Models (TypeScript)
+- `tests/` — Test specifications (TypeScript)
+- `playwright.config.ts` — Playwright configuration (TypeScript)
 - `playwright-report/` — HTML test reports
 - `.github/workflows/test.yml` — CI/CD pipeline
 
@@ -43,16 +43,16 @@ npx playwright show-report
 
 ---
 
-## Testdino Integration
+## Cloud Reporting Integration
 
-[Testdino](https://testdino.com/) enables cloud-based Playwright reporting.
+You can use [Testdino](https://testdino.com/) for cloud-based Playwright reporting.
 
 > **Important:**  
-> Make sure your `playwright.config.js` includes both the HTML and JSON reporters.  
-> The HTML report and JSON report must be available for Testdino to process your test results.
+> Ensure your `playwright.config.ts` includes both the HTML and JSON reporters.  
+> The HTML and JSON reports must be available for Testdino to process your test results.
 
 Example configuration:
-```js
+```ts
 reporter: [
   ['html', { outputFolder: 'playwright-report', open: 'never' }],
   ['json', { outputFile: './playwright-report/report.json' }],
